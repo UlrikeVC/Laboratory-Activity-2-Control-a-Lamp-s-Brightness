@@ -1,0 +1,19 @@
+# Laboratory Activity: Control a Lamp's Brightness
+
+## Results
+
+| Brightness Setting | Switch State | Expected Lamp Brightness | Observed Output |
+|-------------------:|:------------:|-------------------------:|----------------:|
+| 0                  |      ON      |             0            |         0       |
+| 50                 |      ON      |            50            |         50      |
+| 100                |      ON      |           100            |         100     |
+| 0                  |     OFF      |             0            |         0       |
+| 50                 |     OFF      |             0            |         0       |
+| 100                |     OFF      |             0            |         0       |
+
+## Short Explanation
+
+The function `getLampBrightness()` has two parameters: `switchOn` and `brightnessSetting`. The `switchOn` parameter is a `bool` 
+that determines whether the lamp is on or off. The `brightnessSetting` parameter is an `int` that stores the brightness value from 0 to 100.
+When `switchOn` is true, the function returns the value of `brightnessSetting`. When `switchOn` is false, the function returns 0.
+The returned value is stored in `lampBrightness` and printed using the Serial Monitor. 
